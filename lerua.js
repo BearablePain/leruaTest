@@ -73,7 +73,7 @@ class Store {
     // Перебрать объект чтобы вернуть магазин с максимальным количеством товара
     for (const key in this.stocks) {
       if (this.stocks[key] === maxCount) {
-        return key;
+        return { [key]: maxCount };
       }
     }
   };
