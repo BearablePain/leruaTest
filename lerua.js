@@ -51,14 +51,14 @@ class Store {
       ? this.data?.displayedName?.displayedName.value[0]
       : new Error('одно из свойств объекта отсутствует');
 
-  getNumbersStouns = () => {
-    const arrayNumbersStouns = [];
+  getActualStocks = () => {
+    const arrayNumbersStocks = [];
     for (const key in this.stocks) {
       if (this.stocks[key] != 0) {
-        arrayNumbersStouns.push(key);
+        arrayNumbersStocks.push(key);
       }
     }
-    return arrayNumbersStouns;
+    return arrayNumbersStocks;
   };
 
   findStoreMaxQuantityGoods = () => {
